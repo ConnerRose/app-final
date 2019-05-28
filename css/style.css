@@ -9,6 +9,11 @@ header {
     padding-bottom: 20%;
 }
 
+#remind_container {
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
 .reminder_tab {
     background-color: #c2f3f3;
     width: 90%;
@@ -26,4 +31,10 @@ header {
     font-family: 'Oswald', cursive;
     color: #099;
     font-size: 50pt;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
