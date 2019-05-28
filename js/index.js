@@ -59,7 +59,7 @@ var remind_container = document.getElementById("remind_container");
     //loop through reminder object structure
 for (i = 0; i < Object.size(test_obj); i++) {
     var current_remind_obj = test_obj[i];
-    remind_container.insertAdjacentHTML('beforeend','<article class="reminder_tab"> <h1 class="reminder_name">' + current_remind_obj.name + '</h1></article>');
+    remind_container.insertAdjacentHTML('beforeend','<article class="reminder_tab"> <h1 class="reminder_name">' + current_remind_obj.name + '</h1><h2 class="reminder_date">' + current_remind_obj.time + '</h2></article>');
 }
 
 

@@ -31,6 +31,15 @@ header {
     font-family: 'Oswald', cursive;
     color: #099;
     font-size: 50pt;
+    font-style: italic;
+}
+
+.reminder_date {
+    margin-left: 25px;
+    font-family: 'Oswald', cursive;
+    color: #099;
+    font-size: 40pt;
+    padding-top: 20px;
 }
 
 .sticky {
