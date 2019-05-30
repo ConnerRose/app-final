@@ -8,40 +8,6 @@
 
 //variables
 var test_obj =  {
-    0: {
-        "name": "stupid task",
-        "time": "5/24/2019"
-    },
-
-    1: {
-        "name": "stupider task",
-        "time": "5/24/2019"
-    },
-
-    2: {
-        "name": "poop",
-        "time": "5/24/2019"
-    },
-
-    3: {
-        "name": "poop 1",
-        "time": "5/24/2019"
-    },
-
-    4: {
-        "name": "poop 2",
-        "time": "5/24/2019"
-    } ,
-
-    5: {
-        "name": "poop 2000",
-        "time": "5/24/2019"
-    },
-
-    6: {
-        "name": "poop pee",
-        "time": "5/24/2019"
-    }
 }
 
 //functions
@@ -55,10 +21,16 @@ Object.size = function(obj) {
 
 //write reminders to article
 var remind_container = document.getElementById("remind_container");
+var new_button_container = document.getElementById("new_button_container");
 
-    //loop through reminder object structure
+//loop through reminder object structure
 for (i = 0; i < Object.size(test_obj); i++) {
     var current_remind_obj = test_obj[i];
     remind_container.insertAdjacentHTML('beforeend','<article class="reminder_tab"> <h1 class="reminder_name">' + current_remind_obj.name + '</h1><h2 class="reminder_date">' + current_remind_obj.time + '</h2></article>');
+}
+
+//if no reminders are present, display text
+if (Object.size(test_obj) == 0){
+    new_button_container.insertAdjacentHTML('beforeend','<p id="no_reminder_header">Click Here to Add New Reminder</p>');
 }
 

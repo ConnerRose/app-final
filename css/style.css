@@ -52,11 +52,11 @@ header {
     height: 200px;
 }
 
-#empty_obj_notif {
+#no_reminder_header {
     color: #bcbcbc;
     font-family: 'Oswald', cursive;
     margin-top: 5px;
-    font-size: 40pt;
+    font-size: 45pt;
 }
 
 .sticky {
