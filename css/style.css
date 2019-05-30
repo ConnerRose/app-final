@@ -11,7 +11,7 @@ header {
 
 #remind_container {
     padding-top: 20%;
-    padding-bottom: 20%;
+    padding-bottom: 5%;
 }
 
 .reminder_tab {
@@ -40,6 +40,23 @@ header {
     color: #099;
     font-size: 40pt;
     padding-top: 20px;
+}
+
+#new_button_container {
+    text-align: center;
+}
+
+#new_button {
+    margin-bottom: 5%;
+    width: 200px;
+    height: 200px;
+}
+
+#empty_obj_notif {
+    color: #bcbcbc;
+    font-family: 'Oswald', cursive;
+    margin-top: 5px;
+    font-size: 40pt;
 }
 
 .sticky {

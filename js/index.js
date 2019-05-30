@@ -62,4 +62,3 @@ for (i = 0; i < Object.size(test_obj); i++) {
     remind_container.insertAdjacentHTML('beforeend','<article class="reminder_tab"> <h1 class="reminder_name">' + current_remind_obj.name + '</h1><h2 class="reminder_date">' + current_remind_obj.time + '</h2></article>');
 }
 
-
