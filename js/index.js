@@ -10,6 +10,9 @@
 var test_obj =  {
 }
 
+//allocate local storage for reminder structure
+localStorage.setItem('reminders', JSON.stringify(test_obj));
+
 //functions
 Object.size = function(obj) {
     var size = 0, key;
@@ -33,4 +36,3 @@ for (i = 0; i < Object.size(test_obj); i++) {
 if (Object.size(test_obj) == 0){
     new_button_container.insertAdjacentHTML('beforeend','<p id="no_reminder_header">Click Here to Add New Reminder</p>');
 }
-
