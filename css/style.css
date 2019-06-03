@@ -9,9 +9,47 @@ header {
     padding-bottom: 20%;
 }
 
+h3 {
+    font-family: 'Oswald', cursive;
+    color: #099;
+    font-size: 50px;
+}
+
 #remind_container {
     padding-top: 20%;
     padding-bottom: 5%;
+}
+
+#fourm_container {
+    padding-top: 20%;
+    padding-bottom: 5%;
+}
+
+#fourm_info {
+    margin-top: 75px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    background-color: #33cccc;
+    border-radius: 50px;
+}
+
+#fourm_desc_area{
+    height: 300px;
+    margin-bottom: 50px;
+}
+
+.fourm_section {
+    margin: 0 auto;  
+    width: 90%;
+    height: 100px;
+    margin-top: 5px;
+    font-size: 50pt;
+    background-color: #c2f3f3;
+    margin-bottom: 5px;
+    font-family: 'Oswald', cursive;
+    color: #099;
+
 }
 
 .reminder_tab {

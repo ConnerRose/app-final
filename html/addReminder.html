@@ -10,12 +10,18 @@
 
         </header>
         <!--User Fourm-->
-        <article>
+        <article id="fourm_container">
             <form>
-                Reminder Name:<br>
-                <input type="text" name="remind_name">
-                <input type="date" name="remind_date">
-                <input type="textarea" name="remind_desc">
+                <article id="fourm_info">            
+                    <h3>Name</h3>
+                    <input class="fourm_section" type="text" name="remind_name" maxlength = "20"><br>
+                    <h3>Date</h3>
+                    <input class="fourm_section" type="date" name="remind_date">b<br>
+                    <h3>Time</h3>
+                    <input class="fourm_section" type="time" name="remind_time"><br>
+                    <h3>Description</h3>
+                    <textarea id="fourm_desc_area" class="fourm_section" type="text" name="remind_desc"></textarea>
+                </article>
             </form>
         </article>
     </body>
