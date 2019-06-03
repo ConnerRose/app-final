@@ -11,16 +11,20 @@
         </header>
         <!--User Fourm-->
         <article id="fourm_container">
-            <form>
+            <!--send data to js-->
+            <script src="../js/formSubmit.js"></script>
+
+            <form onsubmit="sendData()" action="../html/index.html">
                 <article id="fourm_info">            
                     <h3>Name</h3>
-                    <input class="fourm_section" type="text" name="remind_name" maxlength = "20"><br>
+                    <input class="fourm_section" id="fourm_name" type="text" name="remind_name" maxlength = "20"><br>
                     <h3>Date</h3>
-                    <input class="fourm_section" type="date" name="remind_date">b<br>
+                    <input class="fourm_section" id="fourm_date" type="date" name="remind_date"><br>
                     <h3>Time</h3>
-                    <input class="fourm_section" type="time" name="remind_time"><br>
+                    <input class="fourm_section" id="fourm_time" type="time" name="remind_time"><br>
                     <h3>Description</h3>
-                    <textarea id="fourm_desc_area" class="fourm_section" type="text" name="remind_desc"></textarea>
+                    <textarea id="fourm_desc_area" class="fourm_section"  id="fourm_desc" type="text" name="remind_desc"></textarea>
+                    <input type="submit">
                 </article>
             </form>
         </article>

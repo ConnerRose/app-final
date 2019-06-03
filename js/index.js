@@ -7,32 +7,26 @@
 //dependencies
 
 //variables
-var test_obj =  {
-}
-
-//allocate local storage for reminder structure
-localStorage.setItem('reminders', JSON.stringify(test_obj));
-
-//functions
-Object.size = function(obj) {
-    var size = 0, key;
-    for (key in obj) {
-        if (obj.hasOwnProperty(key)) size++;
+    //allocate local storage for reminder structure
+    if(localStorage.getItem('reminders') === null){
+        var reminder_data = [];
+        console.log('fuck');
+        localStorage.setItem('reminders', JSON.stringify(reminder_data));
+    } else {
+        reminder_data = localStorage.getItem('reminders');
     }
-    return size;
-}
 
 //write reminders to article
 var remind_container = document.getElementById("remind_container");
 var new_button_container = document.getElementById("new_button_container");
 
 //loop through reminder object structure
-for (i = 0; i < Object.size(test_obj); i++) {
-    var current_remind_obj = test_obj[i];
+for (i = 0; i < reminder_data.length; i++) {
+    var current_remind_obj = reminder_data[i];
     remind_container.insertAdjacentHTML('beforeend','<article class="reminder_tab"> <h1 class="reminder_name">' + current_remind_obj.name + '</h1><h2 class="reminder_date">' + current_remind_obj.time + '</h2></article>');
 }
 
 //if no reminders are present, display text
-if (Object.size(test_obj) == 0){
+if (reminder_data.length == 0){
     new_button_container.insertAdjacentHTML('beforeend','<p id="no_reminder_header">Click Here to Add New Reminder</p>');
 }
