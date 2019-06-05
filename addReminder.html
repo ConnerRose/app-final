@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <link rel = "stylesheet" type = "text/css" href = "../css/style.css">
+        <title>App final</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <header class = 'sticky'>
+            <image class="logo_b" src="../images/spr_logo_white.png"></image>
+            <div class = 'header_button_container'>
+                <input id="back_button" type="image" src="../images/spr_back_button.png" onclick="window.location.href = 'index.html';"">
+            </div>
+        </header>
+        <!--User Fourm-->
+        <article id="fourm_container">
+            <!--send data to js-->
+            <script src="../js/formSubmit.js"></script>
+
+            <form onsubmit="sendData()" action="../html/index.html">
+                <article id="fourm_info">            
+                    <h3>Name</h3>
+                    <input class="fourm_section" id="fourm_name" type="text" name="remind_name" maxlength = "20" required><br>
+                    <h3>Date</h3>
+                    <input class="fourm_section" id="fourm_date" type="date" name="remind_date"><br>
+                    <h3>Time</h3>
+                    <input class="fourm_section" id="fourm_time" type="time" name="remind_time"><br>
+                    <h3>Description</h3>
+                    <textarea id="fourm_desc_area" class="fourm_section"  id="fourm_desc" type="text" name="remind_desc"></textarea>
+                    <input type="image" alt="submit" src="../images/spr_new_button.png" id="submit_button">
+                </article>
+            </form>
+        </article>
+    </body>
+</html>
